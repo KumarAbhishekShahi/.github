@@ -1,9 +1,9 @@
 {
-    "name": "Octo Organization Workflow",
-    "description": "Octo Organization CI workflow template.",
+    "name": "DB Standard Workflow",
+    "description": "DB Standard CI workflow template.",
     "iconName": "example-icon",
     "categories": [
-        "Go"
+        "Java"
     ],
     "filePatterns": [
         "package.json$",
