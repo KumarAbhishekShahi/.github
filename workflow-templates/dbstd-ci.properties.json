@@ -1,7 +1,7 @@
 {
     "name": "DB Standard Workflow",
     "description": "DB Standard CI workflow template.",
-    "iconName": "example-icon",
+    "iconName": "gitlogo",
     "categories": [
         "Java"
     ],
