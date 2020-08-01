@@ -1,7 +1,7 @@
 {
     "name": "DB Standard Workflow",
-    "description": "DB Standard CI workflow template.",
-    "iconName": "gitlogo",
+    "description": "DB Standard workflow to setup CI and CD tasks for Maven based Java Applications. Jobs included - checkout, compile, build, test, scan, upload-test-artifact, create-container-image, push-to-artifactory, pull-from-artifactory, deploy-to-GKE",
+    "iconName": "dbaction-icon",
     "categories": [
         "Java"
     ],
