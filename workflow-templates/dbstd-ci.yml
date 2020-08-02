@@ -1,17 +1,14 @@
 name: Octo Organization CI
 
-on:
-  push:
-    branches: [ test-branch ]
-  pull_request:
-    branches: [ test-branch ]
+on: |
+  [push]
+  repository_dispatch:
+    types: [ exec-workflow ]
+    branches: ${{ github.event.client_payload.branch }}
 
 jobs:
-  build:
+  code-checkout:
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Run a one-line script
-      run: echo Hello from Octo Organization
