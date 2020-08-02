@@ -6,7 +6,7 @@ on:
       - master
   repository_dispatch:
     types: [ exec-workflow ]
-    branches: ${{ github.event.client_payload.branch }}
+    branches: master
 
 jobs:
   code-checkout:
