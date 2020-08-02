@@ -22,4 +22,4 @@ jobs:
         java-version: 14
 
     - name: Compile Code
-      run: mvn -f ../../pom.xml clean compile
+      run: mvn clean compile
