@@ -1,7 +1,9 @@
 name: Octo Organization CI
 
-on: |
-  [push]
+on:
+  push:
+    branches:
+      - master
   repository_dispatch:
     types: [ exec-workflow ]
     branches: ${{ github.event.client_payload.branch }}
