@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 14
 
-    - name: Cache the Maven packages to Speed-Up Build
+    - name: Cache Maven Packages to Speed-Up Build
       uses: actions/cache@v1
       with:
         path: ~/.m2
@@ -39,3 +39,8 @@ jobs:
       with:
         name: artifact
         path: target
+
+    - name: Download artifact
+      uses: actions/download-artifact@v1
+      with:
+        name: artifact
